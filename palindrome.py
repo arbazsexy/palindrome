@@ -7,7 +7,6 @@ def is_palindrome(text: str) -> bool:
 
 
 def main():
-
   if len(sys.argv) < 2:
     print("Usage: python palindrome.py '<text to check>'")
     sys.exit(1)
@@ -16,10 +15,10 @@ def main():
 
   if is_palindrome(text):
     print(f'"{text}" is a palindrome!')
-    sys.exit(0)  
+    sys.exit(0)
   else:
     print(f'"{text}" is not a palindrome.')
-    
+    sys.exit(1)
 
 
 if __name__ == "__main__":
